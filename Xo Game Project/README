@@ -1,0 +1,47 @@
+README
+----------------------------------------------------------------------
+XO Game: A Simple 3x3 XO Game also known as Tic Tac Toe
+
+Created by Jithin Aji (jithin396@gmail.com) & Gopikrishnan.R
+----------------------------------------------------------------------
+
+
+INSTALLING
+-----------
+Open Terminal and type 'make' and then 'sudo make install'.
+
+
+COMPILATION OF SOURCE
+----------------------
+
+The XO Game can be compiled for playing in the Command Line or in a Graphical User Interface.
+
+The GUI requires Gtk >=3.20
+
+                    To Compile the CLI of the game,use the following command-
+
+gcc engine.c -DCLI -o XOGame-CLI
+
+then, type ./XOGame-CLI to run the game
+
+                    To Compile the GUI of the game,use the following command-
+
+gcc -DGUI -rdynamic `pkg-config --cflags gtk+-3.0` -o example-0 xogame.c engine.c `pkg-config --libs gtk+-3.0`
+----------------------------------------------------------------------
+
+Note
+------
+Define CLI while compiling to compile the CLI and GUI to compile the GUI.
+eg:  gcc -DCLI..... or gcc -DGUI......
+
+
+NOTICE WHILE BUILDING
+----------------------------------------------------------------------
+The 'resources' folder and 'xogame.glade' file should go to "/usr/share/XOGame/" while building and the generated binary should go to "/usr/bin/"
+Changes in any of the path results in Error.
+
+You Don't have to include the source files in the build.
+
+The 'resources' folder and the 'xogame.glade' file should go under '/usr/share/XOGame/'
+The 'xogame' compiled binary file should go under '/usr/bin/'
+The 'xogame.desktop' file should go under '/usr/share/applications/'

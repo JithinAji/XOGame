@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=XO Game
+GenericName=XO (Tic Tac Toe)
+Comment=A Simple 3x3 XO Game
+Exec=xogame
+Icon=/usr/share/XOGame/resources/icon_128.png
+Terminal=false
+Categories=Game;
